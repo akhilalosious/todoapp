@@ -1,0 +1,40 @@
+body{
+    background: #3399ff;
+    text-align: center;
+
+}
+
+
+#wrapper{
+    margin-top: 10% !important;
+}
+
+#content{
+    margin-top: 20px;
+    background: #ffff99;
+    padding: 25px
+}
+
+form{
+    width: 100%;
+    margin-right: 5%;
+}
+
+input {
+    border-radius: 3px;
+}
+
+.addbutton {
+    border-radius:3px;
+    background-color: rgb(5, 255, 113);
+}
+
+.deletecompleted {
+    border-radius:3px;
+    background-color: coral;
+}
+
+.deleteall {
+    border-radius:3px;
+    background-color: red;
+}
