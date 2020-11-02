@@ -30,10 +30,13 @@
           </div>
         </form>
       </div>
+      
       <a href="{%url 'deletecompleted'%}"><button type="button" class="btn btn-warning">Delete Completed</button></a>
       <a href="{%url 'deleteall'%}"><button type="button" class="btn btn-danger">Delete All</button></a>
+      
       <ul class="list-group mt-3">
-        {% for todolist in todo_list %} {% if todolist.completed %}
+        {% for todolist in todo_list %}
+            {% if todolist.completed %}
         <li class="list-group-item todo-completed">{{todolist.text}}</li>
         {% else %}
         <a href="{% url 'completed' todolist.id %}" class="list-group-item">{{todolist.text}}</a>
